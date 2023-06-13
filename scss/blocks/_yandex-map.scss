@@ -1,0 +1,44 @@
+[class*="copyrights-pane"] {
+	/* display: none !important; */
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.map:hover [class*="copyrights-pane"] {
+    opacity: 1;
+}
+
+/* Создать свою карту */
+[class*="gototech"] {
+    display: none !important;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1) sepia(10%);
+}
+
+/* Baloon */
+
+[class*="balloon__layout"], [class*="balloon__content"] {
+	background-color: #242b33 !important;
+    color: #fff !important;
+}
+
+[class*="balloon__tail"]::after {
+	background-color: #242b33 !important;
+}
+
+[class*="balloon_layout_panel"] {
+	background-color: #242b33 !important;
+}
+
+[class*="balloon__layout"], [class*="balloon__content"] a {
+    color: $accent !important;
+}
+
+[class*="balloon__close-button"] {
+    background: url('./../img/map/cross.svg') 50% no-repeat !important;
+    width: 15px !important;
+    height: 15px !important;
+    margin: 10px 7px;
+}
